@@ -1,4 +1,4 @@
-//#include <experimental/coroutine>
+//#include <coroutine>
 //
 //#include <iostream>
 //#include <cassert>
@@ -67,7 +67,7 @@
 //
 
 
-#include <experimental/coroutine>
+#include <coroutine>
 #include <memory>
 #include <iostream>
 
@@ -75,6 +75,7 @@ template<typename T>
 struct Generator {
 
     struct promise_type;
+    
     using handle_type = experimental::coroutine_handle<promise_type>;
 
     Generator(handle_type h) : coro(h) {}                         // (3)

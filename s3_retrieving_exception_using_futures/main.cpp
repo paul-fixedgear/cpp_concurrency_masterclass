@@ -2,6 +2,7 @@
 #include <thread>         
 #include <future>         
 #include <stdexcept>   
+#include <math.h>
 
 void throw_exception()
 {

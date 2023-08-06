@@ -31,7 +31,7 @@ int main()
     auto endTime = high_resolution_clock::now();
     print_results("sequential scan", startTime, endTime);
 
-    // C++17 parallel implementation
+    // c++20 parallel implementation
     startTime = high_resolution_clock::now();
     std::inclusive_scan(std::execution::par,ints.cbegin(), ints.cend(), outs.begin());
     endTime = high_resolution_clock::now();
